@@ -61,7 +61,7 @@ that is not effective NPU work, so it is only used as a fallback approximation.
 Install the build dependencies:
 
 ```bash
-sudo pacman -S --needed base-devel cmake ninja extra-cmake-modules qt6-base qt6-tools kcoreaddons ki18n libksysguard ksystemstats
+sudo pacman -S --needed base-devel cmake extra-cmake-modules qt6-base qt6-tools kcoreaddons ki18n libksysguard ksystemstats
 ```
 
 ## Build
@@ -69,7 +69,7 @@ sudo pacman -S --needed base-devel cmake ninja extra-cmake-modules qt6-base qt6-
 From the project directory:
 
 ```bash
-cmake -S . -B build -G Ninja -DBUILD_TESTING=ON
+cmake -S . -B build -DBUILD_TESTING=ON
 cmake --build build
 ctest --test-dir build --output-on-failure
 ```
