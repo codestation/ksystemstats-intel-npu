@@ -1,0 +1,6 @@
+{
+    "KPlugin": {
+        "Description": "Intel NPU sensors",
+        "Name": "Intel NPU"
+    }
+}
